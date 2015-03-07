@@ -1,12 +1,18 @@
 # jmlp
-Java Machine Learning Platform
+Java Machine Learning Platform, author: Xiao-Bo Jin
 
-Jmlp is a java platform for both of the machine learning experiments and application. I have tested it on the window platform. But it should be applicable in the linux platform due to the cross-platform of Java language.
+Jmlp is a java platform for both of the machine learning experiments and application. I have tested it on the window platform. But it should be applicable in the linux platform due to the cross-platform of Java language. It contains the classical classification algorithm (Discrete AdaBoost.MH, Real AdaBoost.MH, SVM, KNN, [MCE](http://www.sciencedirect.com/science/article/pii/S0031320310000464),MLP,NB) and feature reduction(KPCA,PCA,Whiten) etc.
+
+You can use it for the machine learning experiment and search the optimal parameters.
+
+It also can excute the text categorization application (Chinese and English).
+
+Final, it contain a GUI for the test procedure.
 
 
 #Install 
 
-1.  Your version of JDK is required to be higher than 1.7.
+1.  Your version of JDK is required to be higher than 1.7. It also needs the package: [libsvm](http://www.csie.ntu.edu.tw/~cjlin/libsvm/), [jblas](http://mikiobraun.github.io/jblas/), [lucene](http://lucene.apache.org/), [IKAnalyzer](http://code.google.com/p/ik-analyzer/) in the lib.
 2.  Copy the files in you directory.
 3.  Run ./learn/src/utility/TestCase.java.
 4.  Enjoy.
@@ -14,9 +20,12 @@ Jmlp is a java platform for both of the machine learning experiments and applica
 P.S. if you want to run on 20 newsgroup. please download:
 the dataset from:  http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz
 and place them in the location as the following form:
-.\20news-bydate\20news-bydate-test\alt.atheism
+.\20news-bydate\20news-bydate-test\alt.atheism <br />
 
-You also can run .bat in the form of command line on the window platform, or change .bat into .sh and run it on linux platform.
+or run Chinese text corpus, you can visit [Corpus on People's Daily](http://www.icl.pku.edu.cn/icl_res/) for Chinese text categorization.
+
+
+You also can run .bat in the form of command line on the window platform, or change .bat into .sh and run it on linux platform. But please attention to the location of the dataset file.
 
 #Demo 
 
