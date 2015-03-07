@@ -1,0 +1,75 @@
+"G:\Program Files\Java\jdk1.7.0_17\bin\java" -Didea.launcher.port=7533 "-Didea.launcher.bin.path=G:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.0.2\bin" -Dfile.encoding=UTF-8 -classpath "G:\Program Files\Java\jdk1.7.0_17\jre\lib\charsets.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\deploy.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\javaws.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\jce.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\jfr.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\jfxrt.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\jsse.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\management-agent.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\plugin.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\resources.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\rt.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\access-bridge-64.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\dnsns.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\jaccess.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\localedata.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\sunec.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\sunjce_provider.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\sunmscapi.jar;G:\Program Files\Java\jdk1.7.0_17\jre\lib\ext\zipfs.jar;D:\ml-rap-dist\learn\bin;D:\ml-rap-dist\lib\IKAnalyzer2012.jar;D:\ml-rap-dist\lib\jblas-1.2.3.jar;D:\ml-rap-dist\lib\lucene-core-3.0.1.jar;G:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 14.0.2\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain utility.TestCase
+
+D:\ml-rap-dist\learn>java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -file D:\UCIDataSet\20news-bydate\20news-bydate-train -test D:\UCIDataSet\20news-bydate\20news-bydate-test -machine nb   -n_select 1000 -eval accuracy;prec;recall;f1 
+load file-> rows: 11314 cols: 1000 classes: 20
+begin to load the test file...
+load file-> rows: 7532 cols: 1000 classes: 20
+build Naive Bayes classifier ..
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+predict => D:\UCIDataSet\20news-bydate\outputs.txt
+measure the dataset by accuracy=0.731014
+measure the dataset by avg-prec=0.731355
+measure the dataset by recall=0.722823
+measure the dataset by f1=0.722923
+the 0 repeat measure: accuracy=0.731014 prec=0.731355 recall=0.722823 f1=0.722923 
+the average test measure: accuracy=73.101434 prec=73.135549 recall=72.282333 f1=72.292308  <- D:\UCIDataSet\20news-bydate\20news-bydate-test
+
+1 times average running time is: 13.19 seconds or 0.004 hours
+
+D:\ml-rap-dist\learn>java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -file D:\UCIDataSet\20news-bydate\20news-bydate-train -test D:\UCIDataSet\20news-bydate\20news-bydate-test -machine tfidf;mlp -seed 1 -n_select 1000 -eval accuracy;prec;recall;f1 
+load file-> rows: 11314 cols: 1000 classes: 20
+begin to load the test file...
+load file-> rows: 7532 cols: 1000 classes: 20
+preprocessing the data input by TFIDF
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+begin to forward: NO. 10000 example
+build MLP classifier with 40 hidden unit...
+the 0 iter error: 1.204435...
+the 5 iter error: 0.216656...
+the 10 iter error: 0.164056...
+the 15 iter error: 0.142470...
+the 20 iter error: 0.129756...
+the 25 iter error: 0.121021...
+the 30 iter error: 0.114486...
+the 35 iter error: 0.109326...
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+predict => D:\UCIDataSet\20news-bydate\outputs.txt
+measure the dataset by accuracy=0.737520
+measure the dataset by avg-prec=0.737413
+measure the dataset by recall=0.731847
+measure the dataset by f1=0.732847
+the 0 repeat measure: accuracy=0.737520 prec=0.737413 recall=0.731847 f1=0.732847 
+the average test measure: accuracy=73.751992 prec=73.741284 recall=73.184686 f1=73.284668  <- D:\UCIDataSet\20news-bydate\20news-bydate-test
+
+1 times average running time is: 113.72 seconds or 0.032 hours
+
+D:\ml-rap-dist\learn>java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -file D:\UCIDataSet\20news-bydate\20news-bydate-train -test D:\UCIDataSet\20news-bydate\20news-bydate-test -machine tfidf;svm   -n_select 1000 -eval accuracy;prec;recall;f1  
+load file-> rows: 11314 cols: 1000 classes: 20
+begin to load the test file...
+load file-> rows: 7532 cols: 1000 classes: 20
+preprocessing the data input by TFIDF
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+begin to forward: NO. 10000 example
+build SVM with RBF kernel with gamma: 0.50 C: 1.00
+Total SV: 23139
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+begin to forward: NO. 0 example
+begin to forward: NO. 5000 example
+predict => D:\UCIDataSet\20news-bydate\outputs.txt
+measure the dataset by accuracy=0.760887
+measure the dataset by avg-prec=0.754897
+measure the dataset by recall=0.751001
+measure the dataset by f1=0.750148
+the 0 repeat measure: accuracy=0.760887 prec=0.754897 recall=0.751001 f1=0.750148 
+the average test measure: accuracy=76.088688 prec=75.489655 recall=75.100109 f1=75.014847  <- D:\UCIDataSet\20news-bydate\20news-bydate-test
+
+1 times average running time is: 364.67 seconds or 0.101 hours
+
+Process finished with exit code 0

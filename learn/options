@@ -1,0 +1,41 @@
+# the item including the option name| the default value| the help| the optimizable parameter or not? note no | symbols.
+
+-file||the training file and the filter name
+-seed|1|the seed for the random of the algorithm and the split
+-ulr|0.01|the leaning rate for the un-supervised algorithm|true
+-slr|0.01|the leaning rate for the supervised algorithm|true
+-uiter|40|the iteration for the un-supervised optimization of the gradient algorithm|true
+-siter|40|the iteration for the supervised optimization of the gradient algorithm|true
+-regular|0|the regularization for the lvq algorithm or the tradeoff parameters in svm|true
+-num|100|the number of the weak learner for AdaBoost and Bagging|true
+-hidden|40|the number of the mlp classifier|true
+-kfold|1|the k value for cross fold validation of the dataset
+-machine|rmh|the machine name for the classification(output,rmh,mce,dtr,norm,rb,ecoc_b,ecoc_q,scale,miss,thr,qrb,pca,bow,tfidf)
+-visual|0|whether visulize or not?
+-bc|dtr|the base machine used for Adaboost or Bagging
+-dataset||the file contains all dataset for the batch learning of many datasets
+-result||the file saves the result of the algorithms
+-repeat|1|assign the times of the algorithm on datasets
+-test||the test file
+-eval|accuracy|the measure for evaluation.
+-verbose|0|print more running information
+-g|-1|the gamma parameter in the gaussian Kernel [exp(-2^{gamma}(x-y)^2)]or the coefficient in polynomial|true
+-b|0.0|the const coefficient in the dot kernel|true
+-a|0.0|the const coefficient int the dot kernel|true
+-degree|-1|if positive used as a polynomial Kernel [(a xy + b)^d] with the specified degree|true
+-threshold|-1|the number of the threshold in the dataset.|true
+-C|0|the tradeoff parameters for SVM(logC) |true
+-cache|100|the cache space for QP solver(M).
+-select|ig|the selection method for text categorization
+-n_select|100|the number of the feature selection method
+-n_extract|1|the number of the extacted features.|true
+-valid||the valid file for the optimization of the parameters.
+-batch|100|the batch size for the stochastic gradient method alike.
+
+
+
+
+
+
+
+

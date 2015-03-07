@@ -1,0 +1,3 @@
+data        prec accuracy recall     f1 
+Iris      96.34 96.13 96.06 95.98 
+avg:      96.34 96.13 96.06 95.98 
