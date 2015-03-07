@@ -1,7 +1,7 @@
 # jmlp
-Java Machine Learning Platform, author: Xiao-Bo Jin
+Java Machine Learning Platform, author: Xiao-Bo Jin  Any question is welcome, please contact: jxb9801 at 126 dot com
 
-Jmlp is a java platform for both of the machine learning experiments and application. I have tested it on the window platform. But it should be applicable in the linux platform due to the cross-platform of Java language. It contains the classical classification algorithm (Discrete AdaBoost.MH, Real AdaBoost.MH, SVM, KNN, [MCE](http://www.sciencedirect.com/science/article/pii/S0031320310000464),MLP,NB) and feature reduction(KPCA,PCA,Whiten) etc.
+Jmlp is a java platform for both of the machine learning experiments and application. I have tested it on the window platform. But it should be applicable in the linux platform due to the cross-platform of Java language. It contains the classical classification algorithm (Discrete AdaBoost.MH, Real AdaBoost.MH, SVM, KNN, MCE,MLP,NB) and feature reduction(KPCA,PCA,Whiten) etc.
 
 You can use it for the machine learning experiment and search the optimal parameters.
 
