@@ -29,7 +29,7 @@ You also can run .bat in the form of command line on the window platform, or cha
 
 #Demo 
 
-The results is obtained by the .bat file listed in the final column. 
+The results is obtained by the .bat file listed in the final column. Please refer to 'options' file for more options and parameters.
 
 ===========================================================================================<br/>
 nb_text.bat==>
