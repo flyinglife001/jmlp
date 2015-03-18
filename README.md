@@ -31,7 +31,7 @@ You also can run .bat in the form of command line on the window platform, or cha
 
 The results is obtained by the .bat file listed in the final column. 
 
-===================================================================================================<br/>
+===========================================================================================<br/>
 nb_text.bat: 
 java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -file  ..\20news-bydate\20news-bydate-train -test ..\20news-bydate\20news-bydate-test -machine nb   -n_select 1000 -eval accuracy;prec;recall;f1
 <br/>
@@ -39,7 +39,7 @@ mlp_text.bat:
 java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -seed 1 -file ..\20news-bydate\20news-bydate-train -test ..\20news-bydate\20news-bydate-test -machine tfidf;mlp -seed 1 -n_select 1000 -eval accuracy;prec;recall;f1
 <br/>
 svm_text.bat: java -jar learn.jar -Xms512m -Xmx1440m -train_mode text_learn -file ..\20news-bydate\20news-bydate-train -test ..\20news-bydate\20news-bydate-test -machine tfidf;svm   -n_select 1000 -eval accuracy;prec;recall;f1 <br/>
-===================================================================================================<br/>
+===========================================================================================<br/>
 Test text categorization on 20NG(English texts)<br />
 classifier	accuracy	prec	recall	f1	bat file<br />
 nb	73.10	73.14	72.28	72.29	"nb_text.bat"<br />
