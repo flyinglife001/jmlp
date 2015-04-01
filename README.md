@@ -9,6 +9,8 @@ It also can excute the text categorization application (Chinese and English).
 
 Final, it contain a GUI for the test procedure.
 
+Cited by: Xiao-Bo Jin, Cheng-Lin Liu, Xinwen Hou, Regularized margin-based conditional log-likelihood loss for prototype learning, Pattern Recognition,2010.
+
 
 #Install 
 
